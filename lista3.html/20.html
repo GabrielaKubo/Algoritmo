@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Qual o seu salário? <br>
+    <input type="text" id="salario" placeholder="Salário"><br>
+    <button onclick="confirmar()">Confirmar Salário</button>
+    <button onclick="cem()">Pagar conta de R$100</button>
+    <button onclick="quinhentos()">Pagar conta de R$500.</button>
+    <button onclick="loterica()">Ganhar R$2000 na loteria.</button><br>
+    <h3>Grana atual R$<span id="valor">0</span></h3>
+</body>
+</html>
+<script>
+    function confirmar(){
+    var money = Number(salario.value);
+    valor.innerHTML = `${money}`;
+    }
+    function cem(){
+    valor.innerHTML = `${salario.value -= 100}`;
+    }
+    function quinhentos(){
+    valor.innerHTML = `${salario.value -= 500}`;
+    }
+    function loterica(){
+    valor.innerHTML = `${Number(salario.value) + 2000}`;
+    }
+</script>

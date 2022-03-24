@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 01</title>
+</head>
+<body>
+    <h3>Mercearia</h3>
+    <select id="lista_mercearia">
+    <option value="2"> Leite</option>
+    <option value="7">Farinha</option>
+    <option value="10"> Ovos</option>
+    <option value="1">Fermento</option>
+</select> 
+<button onclick="compra()">Ver preço</button>
+</body>
+</html>
+<script>
+    function compra(){
+        var ax_lista = Number(lista_mercearia.value)
+        alert(`Isso custa R$ ${ax_lista.toFixed(2)}`)
+    }
+</script>

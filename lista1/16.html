@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="frio()">Pessoa fria</button>
+    <button onclick="neutro()">Pessoa neutra</button>
+    <button onclick="nervoso()">Pessoa nervosa</button>
+    <h2> <div id="humor">Bom dia, colegas</div></h2>
+
+</body>
+</html>
+<script>
+    function frio(){
+        humor.innerHTML = '<span style="color: blue;">Bom dia, colegas</span>';
+    }
+    function neutro(){
+        humor.innerHTML =  '<span style="color: gray;">Bom dia, colegas</span>';
+
+    }
+    function nervoso (){
+        humor.innerHTML =   '<span style="color: red;">Bom dia, colegas</span>';
+    }
+</script>

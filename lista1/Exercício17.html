@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>O que faz um triatleta?</h1><br><br>
+    <button onclick="nada()">Nada</button>
+    <button onclick="corre()">Corre</button>
+    <button onclick="pedala()">Pedala</button>
+    <span id="imagens"></span>
+  
+    
+</body>
+</html>
+<script>
+    function nada(){
+        imagens.innerHTML = '<br><img src="https://st2.depositphotos.com/1782790/8170/i/950/depositphotos_81704088-stock-photo-face-of-a-female-triathlete.jpg" alt="Tiatleta nadando"style width="25%"><br>'
+    }
+    function corre(){
+        imagens.innerHTML = '<br><img src="https://s2.glbimg.com/lhovhMJDVccM5AnmKu85_QvzE5Q=/smart/e.glbimg.com/og/ed/f/original/2018/04/19/igor_amorelli_corrida.jpg" alt="Triatleta correndo" style="width: 25%;"><br>'
+    }
+    function pedala(){
+        imagens.innerHTML = '<br><img src="https://cdn.shopify.com/s/files/1/0021/5701/9254/articles/Felt_Bicycles_Daniela_Ryf_Commits_2021_1000x.jpg?v=1602279444" alt="Atleta pedalando"style width="25%"><br>'
+    }
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual hobby você deseja praticar?</h1>
+    <select  id="hobbies" onchange="acao()">
+        <option  value="https://cdn.shopify.com/s/files/1/1061/1924/files/Dancer_With_Red_Dress_Emoji_400x400.png">Dança</option>
+        <option  value="https://cdn.shopify.com/s/files/1/1061/1924/files/Virus_Emoji_400x400.png" >Jogar video game</option>
+        <option  value="https://cdn.shopify.com/s/files/1/1061/1924/files/Man_Bowing_Emoji_400x400.png">Assistir seriados</option>
+        <option  value="https://cdn.shopify.com/s/files/1/1061/1924/files/Sign_of_the_Horns_Emoji_400x400.png">Ouvir rock</option>
+    </select> <br>
+    <img src="" alt="" id="imagem" style="width: 50px;">
+   
+</body>
+</html>
+<script>
+function acao(){
+    imagem.src = hobbies.value;
+}
+</script>

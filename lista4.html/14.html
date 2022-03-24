@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Eleição</h3>
+    Quantos votos teve Zé na eleição?<br>
+    <input type="text" id="ze"><br>
+    Quantos votos teve Maria Bigodenha na eleição?<br>
+    <input type="text" id="maria"> <br>
+    Quantos votos brancos teve na eleição?<br>
+    <input type="text" id="brancos"><br>
+    Quantos votos nulos teve a eleição?<br>
+    <input type="text" id="nulos"><br>
+    <button onclick="resultado()">Resultado da Eleição</button> <br>
+    <span id="votos"></span><br>
+    <div id="zeruela"></div>
+    <span id="verde"></span><br>
+    <div id="Maria"></div>
+    <span id="vermelho"></span><br>
+    <div id="Invalid"></div>
+    <span id="cinza"></span>
+</body>
+</html>
+<script>
+    function resultado(){
+    var ze_votos = Number(ze.value);
+    var maria_votos = Number(maria.value);
+    var branco_voto = Number(brancos.value);
+    var nulo_voto = Number (nulos.value);
+    var total = ze_votos + maria_votos + branco_voto + nulo_voto;
+    var perze = ze_votos * 100 / total;
+    var permaria = maria_votos * 100 / total;
+    var invalidos = branco_voto + nulo_voto;
+    var perinva = invalidos * 100 / total;
+    votos.innerHTML = `<b>Total de votos: ${total}</b><br>`
+    zeruela.innerHTML = `Zé Ruela: ${perze}% (${ze_votos} votos)}`
+    verde.innerHTML = `<div style="background-color: green; height: 30px; width: ${perze}%;"></div>`
+    Maria.innerHTML = `Maria Bigodenha: ${permaria}% (${maria_votos})`
+    vermelho.innerHTML = `<div style="background-color: red; height: 30px; width: ${permaria}%;"></div>`
+    Invalid.innerHTML = `Inválidos: ${perinva}% (${invalidos})`
+    cinza.innerHTML = `<div style="background-color: gray; height: 30px; width: ${perinva}%;"></div>`
+    }
+</script>
+
+

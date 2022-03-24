@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img style="height: 200px;" src="https://st.depositphotos.com/1063397/1679/i/600/depositphotos_16799861-stock-photo-without-money.jpg" alt=""><br><br>
+    Quanto dinheiro terá em 6 meses.  
+    <input id="seis" type="text"><br>
+    Quanto dinheiro terá em 3 anos.
+    <input id="anos" type="text"><br>
+    <button onclick="aparecer()">Como estarei no futuro?</button><br><br>
+    <span id="algum"></span>
+    <span id="muito"></span>
+</body>
+</html>
+<script>
+    function aparecer (){
+        algum.innerHTML =  '<img style="height: 200px;" src="https://www.wefashiontrends.com/wp-content/uploads/2020/09/Pessoas-pouco-atraentes-ganham-mais-dinheiro.jpg" alt="">' + 'R$' + seis.value ;
+        muito.innerHTML = '<img style="height: 200px;" src="https://queroficarrico.com/blog/wp-content/uploads/2015/01/ganhar-muito-dinheiro.jpg" alt="">' + 'R$' + anos.value;
+
+    }
+</script>

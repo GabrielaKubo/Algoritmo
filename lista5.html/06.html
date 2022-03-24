@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Estações do ano.</H1>
+    <select  id="estacoes" onchange="clima()">
+        <option value="https://static.mundoeducacao.uol.com.br/mundoeducacao/2019/08/primavera.jpg">Primavera</option>
+        <option value="http://www.skill.com.br/galeria/repositorio/images/noticias/2018/maio/estacoes-e-meses-do-ano-em-espanhol/1_(1).jpg">Verão</option>
+        <option value="https://s3.static.brasilescola.uol.com.br/be/2021/03/outono.jpg">Outono</option>
+        <option value="https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2020/11/estacoes-do-ano-quais-sao-caracteristicas-e-datas-5.jpg">Inverno</option>
+    </select> <br><br>
+    <img src="" id="imagem" style="height: 500px;">
+</body>
+</html>
+<script>
+function clima(){
+    imagem.src = estacoes.value;
+}
+</script>

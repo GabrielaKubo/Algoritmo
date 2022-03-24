@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Informe o nome da Rua/Avenida/Vila:
+    <input id="rua" type="text"><br>
+    Número da casa:
+    <input id="numero" type="text"><br>
+    <button onclick="endereco()">Onde eu moro.</button>
+    <span id="logradouro"></span>
+    <span id="parte"></span>
+</body>
+</html>
+<script>
+    function endereco(){
+        logradouro.innerHTML = 'Seu logradouro é ' + rua.value + '. ';
+        parte.innerHTML = 'O número do seu logradouro é ' + numero.value + '. ';
+    }
+</script>

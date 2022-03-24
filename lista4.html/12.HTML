@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Fases do seu sono</h3>
+    Quantas horas você dormiu? <br>
+    <input type="text" id="horas"><br>
+    <button onclick="calculo()">Calcular Sono</button><br>
+    <span id="fase"></span>
+</body>
+</html>
+<script>
+function calculo(){
+    var tempo = Number (horas.value);
+    var razao = (tempo/100);
+    var fase1 = (razao * 5).toFixed(2);
+    var fase2 = (razao * 45).toFixed(2);
+    var fase3 = (razao * 30).toFixed(2);
+    var faseREM = (razao * 20).toFixed(2);
+    fase.innerHTML = `Ao dormir ${horas.value} horas, você dormiu: <br> ${fase1} horas na fase 1 <br> ${fase2} horas na fase 2 <br> ${fase3} horas na fase 3 <br> ${faseREM} horas na fase REM `
+}
+</script>

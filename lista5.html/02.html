@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Planos final de semana.</h2>
+    <select  id="atracao">
+    <option value='Assistir a filme "Marley & Eu"'>Cinema</option>
+    <option value='Assistir a peça "O Fantasma da Ópera"'>Teatro</option>
+    <option value="Ir ao parqueHopi Hari">Parque</option>
+    <option value="Ouvir o show da Lady Gaga">Show</option>
+    </select>
+    <button onclick="escolha()">Ver atração</button>
+</body>
+</html>
+<script>
+    function escolha(){
+        alert(`${atracao.value}`)
+    }
+</script>

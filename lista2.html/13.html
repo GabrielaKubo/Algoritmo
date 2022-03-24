@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Valor do salário bruto:
+    <input id="bruto" type="text">
+    <button onclick="bt_salario()">Salário Líquido.</button>
+    <span id="info"></span>
+</body>
+</html>
+<script>
+    function bt_salario(){
+        var inss = bruto.value * 0.1;
+        var ir= bruto.value * 0.2;
+        var sindical = bruto.value / 30;
+        info.innerHTML = (`<span style="color: blue;">Apesar de seu salário bruto ser</span><b style="color: green;">R$ ${bruto.value}</b><span style="color: blue;">, após os descontos, você receberá somente</span><b style="color: red;">R$ ${bruto.value-inss-ir-sindical}</b>`);
+       }
+</script>
+<!--Estou mudando esse código remotamente-->
+

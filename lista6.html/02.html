@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Consumo de refrigerante em 1 ano.</h1>
+Quantas latinhas de refrigerante você consome por dia?<br>
+<input type="text" id="latinhas"> <br>
+<button onclick="calculo()">Quantos refris?</button><br>
+<span id="mostrar"></span><br>
+<div>Você consome cerca de <span id="qtdlatinhas">0</span> latinhas </div>
+</body>
+</html>
+<script>
+    var qtdtotal = 0;
+    function calculo(){
+        var latas = Number(latinhas.value);
+         qtdtotal = latas * 365;
+        if (qtdtotal>= 500){
+            mostrar.innerHTML = `Cuidado com a diabetes!`
+        }
+    }
+</script>

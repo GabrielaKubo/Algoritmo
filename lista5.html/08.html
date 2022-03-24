@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Como está meu atendimento?</h1>
+    <select id="classificacao">
+        <option value="1">1 estrela</option>
+        <option value="2">2 estrelas</option>
+        <option value="3">3 estrelas</option>
+        <option value="4">4 estrelas</option>
+        <option value="5">5 estrelas</option>
+    </select> <br>
+    <button onclick="resultado()">Confirmar avaliação</button>
+    <div>Média atual: <span id="estrela">0</span></div>
+    <div>Número de avaliações: <span id="avaliacao">0</span></div>
+    
+</body>
+</html>
+<script>
+var ax_classificacao = 0;
+var ax_estrela = 0;
+var ax_avaliacao = 0;
+var ax_total = 0;
+function resultado (){
+ax_avaliacao ++; 
+var ax_estrela = Number(classificacao.value);
+avaliacao.innerHTML = ax_avaliacao;
+ax_classificacao += Number (ax_estrela);
+var ax_total = ax_classificacao / ax_avaliacao;
+estrela.innerHTML = `${ax_total.toFixed(2)}`;
+}
+</script>

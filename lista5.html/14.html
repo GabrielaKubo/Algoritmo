@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Pizzaria</h2>
+    <select name="" id="pizzas">
+        <option value="23.00">Muçarela</option>
+        <option value="24.00">Calabresa</option>
+        <option value="26.00">Atum</option>
+        <option value="30.00">Portuguesa</option>
+    </select> <br>
+    <select name="" id="incremento">
+        <option value="2.00">Queijo</option>
+        <option value="2.50">Presunto</option>
+        <option value="1.50">Ovo</option>
+        <option value="4.00">Palmito</option>
+        <option value="3.50">Frango</option>
+        <option value="3.00">Catupiry</option>
+    </select> <br>
+    <select name="" id="adicao">
+        <option value="2.00">Queijo</option>
+        <option value="2.50">Presunto</option>
+        <option value="1.50">Ovo</option>
+        <option value="4.00">Palmito</option>
+        <option value="3.50">Frango</option>
+        <option value="3.00">Catupiry</option>
+    </select> <br>
+    <select name="" id="opcao">
+        <option value="2.00">Queijo</option>
+        <option value="2.50">Presunto</option>
+        <option value="1.50">Ovo</option>
+        <option value="4.00">Palmito</option>
+        <option value="3.50">Frango</option>
+        <option value="3.00">Catupiry</option>
+    </select> <br><br>
+    <button onclick="calcular()">Calcular preço da pizza</button> <br>
+    <div id="div_frase"></div> <br>
+
+</body>
+</html>
+<script>
+    var ax_pizza = 0;
+    var ax_incremento = 0;
+    var ax_adicao = 0;
+    var ax_opcao = 0; 
+    var ax_total = 0;
+    function calcular(){
+        var pizzasolo = Number (pizzas.value);
+        var increment = Number (incremento.value);
+        var mais =Number (adicao.value);
+        var and = Number (opcao.value);
+        var total = pizzasolo + increment + mais + and;
+        div_frase.innerHTML = `A pizza era R$ <b>${pizzasolo.toFixed(2)}</b> , mas foi acrescido R$ <span> ${increment.toFixed(2)} </span>,  R$ <span>${mais.toFixed(2)}</span> e R$ <span> ${and.toFixed(2)}</span>  custará um total de R$ <u><b style="color: red;">${total.toFixed(2)}</b></u>` 
+    }
+</script>

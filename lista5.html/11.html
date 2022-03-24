@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H2>Cofrinho</H2>
+    <select  id="banco">
+        <option value="1.00">R$ 1,00</option>
+        <option value="0.50">R$ 0.50 </option>
+        <option value="0.25"> R$ 0.25</option>
+        <option value="0.10"> R$ 0.10</option>
+        <option value="0.05"> R$ 0.05</option>
+    </select> <br>
+    <div>O saldo do cofrinho é de: R$ <span id="saldo"> 0 </span></div> <br>
+    <div> A quantidade de operações foi <span id="op">0</span></div> <br>
+    <div>Média dos depósitos: R$ <span id="media">0</span></div> <br>
+    <button onclick="deposito()">Depositar</button>
+    <button onclick="gastar()">Gastar grana</button>
+</body>
+</html>
+<script>
+    var ax_operacoes = 0;
+    var ax_saldo = 0;
+    var ax_depositos = 0;
+    function deposito(){
+    ax_operacoes ++;
+    ax_saldo = ax_saldo + Number (banco.value);
+    saldo.innerHTML = ax_saldo.toFixed(2);
+    op.innerHTML = ax_operacoes;
+    media.innerHTML = (ax_saldo/ax_operacoes).toFixed(2); 
+    }
+    function gastar (){
+    ax_saldo = 0;
+    ax_operacoes = 0;
+    ax_depositos = 0;
+    saldo.innerHTML = 0;
+    op.innerHTML = 0;
+    media.innerHTML = 0;
+    }
+</script>

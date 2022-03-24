@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Informe seu peso:
+    <input type="text" id="ipt_peso" placeholder="peso"><br>
+    Informe sua altura:
+    <input type="text" name="" id="ipt_altura"
+    placeholder="altura"> <br>
+    <button onclick="man()">IMC Homem</button>
+    <button onclick="women()">IMC Mulher</button>
+    <span id="calculo"></span>
+</body>
+</html>
+<script>
+    function man(){
+        var altura2 = ipt_altura.value * ipt_altura.value;
+        calculo.innerHTML = (`Seu IMC é ${ipt_peso.value / altura2}`);
+    }
+    function women(){
+        var alturam = ipt_altura.value * ipt_altura.value;
+        var imc = ipt_peso.value / alturam;
+        var sub = imc * 0.1;
+        calculo.innerHTML = (`Seu IMC é ${ imc - sub}`);
+    }
+</script>

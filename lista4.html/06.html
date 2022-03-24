@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nome: <br>
+    <input type="text" id="nome"><br>
+    Quantidade total de aulas no curso: <br>
+    <input type="text" id="total_aula"><br>
+    Quantidade de faltas: <br>
+    <input type="text" id="total_falta"> <br>
+    <button onclick="calculo()">Calcular Frenquência</button> <br>
+    <span id="resultado"></span> <br>
+    <div id="grafico"></div>
+</body>
+</html>
+<script>
+    function calculo(){
+var total_fre = total_aula.value - total_falta.value;
+var freq = Number(total_fre / total_aula.value) * 100;
+resultado.innerHTML = `<span style="color: blue;">Olá,</span> <b style="color: green;">${nome.value}</b> <span style="color: blue;">! Sua frenquência foi de </span><b style="color: green;">${freq}</b> <span style="color: blue;"> %</span>`
+grafico.innerHTML = `<div style="background-color: red; height: 20px; width: ${freq}%;"></div>`
+    }
+</script>
+
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="IU.jpg" alt="" style="height: 150px;" onclick="iu()"> Votos: <b id="voto_iu">0</b> <br>
+    <img src="chungha.jpg" alt="" style="height: 150px;" onclick="chungha()"> Votos: <b id="votos_chungha">0</b><br>
+    <div>Total de votos: <b id="total_votos">0</b></div>
+</body>
+</html>
+<script>
+    var ax_chungha = 0;
+    var ax_iu = 0;
+    var ax_total = 0;
+    function iu(){
+        ax_iu ++;
+        ax_total ++;
+        voto_iu.innerHTML = `${ax_iu}`
+        total_votos.innerHTML = `${ax_total}`
+    }
+    function chungha(){
+        ax_chungha ++;
+        ax_total ++;
+        votos_chungha.innerHTML = `${ax_chungha}`
+        total_votos.innerHTML = `${ax_total}`
+    }
+
+</script>

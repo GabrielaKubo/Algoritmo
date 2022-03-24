@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Informe sua nota: <br>
+    <input id="nota" type="text"> <br>
+    <button onclick="avo()">Opinião da avó.</button>
+    <button onclick="mae()">Opinião da mãe.</button><br><br>
+   <span id="feedback"></span>
+ 
+</body>
+</html>
+<script>
+    function avo(){
+         feedback.innerHTML = 'Muito bem, que neto inteligente, porque tirou ' + nota.value +  ' <br><img style="height: 200px;" src="https://st2.depositphotos.com/3332767/10761/i/950/depositphotos_107610568-stock-photo-elderly-woman-giving-a-thumb.jpg">'; 
+         
+    }
+    function mae() {
+        feedback.innerHTML = 'Não fez mais que tua obrigação com essa nota ' + nota.value + ' <br><img style="height: 200px;" src="https://noticiasdatv.uol.com.br/media/_versions/artigos/amor-de-mae-thelma-descobre-2812_fixed_large.jpg" alt="">';
+    }
+</script>

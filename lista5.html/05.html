@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Vamos aprender a tabuada?</h3>
+    <select id="tabuada" onchange="resultado()"><br>
+     <option value="2">tabuada do 2</option>
+     <option value="3">tabuada do 3</option>
+     <option value="4">tabuada do 4</option>
+     <option value="5">tabuada do 5</option>
+     <option value="6">tabuada do 6</option>
+     <option value="7">tabuada do 7</option>
+     <option value="8">tabuada do 8</option>
+     <option value="9">tabuada do 9</option>
+    </select>
+    <span id="conta"></span>
+</body>
+</html>
+<script>
+    function resultado(){
+    var calculo1 = tabuada.value * 1;
+    var calculo2 = tabuada.value * 2;
+    var calculo3 = tabuada.value * 3;
+    var calculo4 = tabuada.value * 4;
+    var calculo5 = tabuada.value * 5;
+    var calculo6 = tabuada.value * 6;
+    var calculo7 = tabuada.value * 7;
+    var calculo8 = tabuada.value * 8;
+    var calculo9 = tabuada.value * 9;
+    conta.innerHTML = `<br> ${tabuada.value} x 1 = ${calculo1} <br> ${tabuada.value} x 2 = ${calculo2}<br>
+    ${tabuada.value} x 3 = ${calculo3} <br> ${tabuada.value} x 4 = ${calculo4} <br>
+    ${tabuada.value} x 5 = ${calculo5} <br> ${tabuada.value} x 6 = ${calculo6} <br> ${tabuada.value} x 7 = ${calculo7} <br>
+    ${tabuada.value} x 8 = ${calculo9} <br> ${tabuada.value} x 9 = ${calculo9}`
+    }
+</script>
